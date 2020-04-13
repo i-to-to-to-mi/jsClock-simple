@@ -1,0 +1,61 @@
+/* Google Webフォントを利用設定するCSSをインポート */
+/* @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Mansalva&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Lacquer&family=Mansalva&display=swap');
+
+/* body要素(全体) */
+body
+{
+    position: fixed;
+    /* 文字色を白に */
+    color: rgba(39, 38, 38, 0.904);
+    /* 背景色を黒に */
+    background-color: white;
+}
+
+/* id="clock_frame" のdiv要素 */
+div#clock_frame
+{
+    /* 横幅を親要素であるbodyの100%(同じ幅)にする */
+    width: 100%;
+}
+
+img{
+    margin-left: 85%;
+}
+/* span要素のデフォルト */
+span
+{
+    /* 本来はインライン要素であるspanをブロック要素として扱う */
+    display: block;
+    /* ここでは親要素であるdivの内部で右に寄せて配置させる */
+    float: right;
+    /* 横幅を親要素であるdivの50%にする */
+    width: 50%;
+    /* フォントの種類を一番上で指定したGoogle Webフォントに設定する */
+    /* font-family: 'Lacquer', cursive; */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
+    /* font-family: 'Mansalva', cursive; */
+    font-family: 'Coiny', cursive;
+}
+
+
+/* id="clock_date" のspan要素 */
+span#clock_date
+{
+    display:none;
+    /* この要素の中におけるテキストを右詰めにする デフォルト値のtext-align:leftを上書き */
+    text-align: right;
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の0.5倍にする */
+    font-size: 0.5em;
+    /* 右のパディングの幅を親要素であるdivで設定されたフォントサイズ(px)の0.5倍にする */
+    padding-right: 0.5em;
+}
+
+/* id="clock_time" のspan要素 */
+span#clock_time
+{
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の2倍にする */
+    font-size: 2em;
+}
