@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 文字コードの宣言 -->
+    <meta charset="UTF-8">
+    <!-- ページのタイトル(ブラウザのタイトルバーに表示) -->
+    <title>jsClock-simple</title>
+    <!-- スタイルシート(CSS)読み込み -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- JavaScript読み込み -->
+    <script src="./jsclock.js"></script>
+</head>
+
+  <body>
+    <img src="001.png" name="image">
+    <script type="text/javascript">
+      img = new Array("001.png","002.png","003.png","004.png","005.png","006.png"); //*1
+      count = -1; //*2
+      imgTimer();
+      
+      function imgTimer() {
+        //画像番号
+        count++; //*3
+        //画像の枚数確認
+        if (count == img.length) count = 0; //*4
+        //画像出力
+        document.image.src = img[count]; //*5
+        //次のタイマー呼びだし
+        setTimeout("imgTimer()",2000); //*6
+      }
+    </script>
+    <!-- 時計枠 -->
+    <div id="clock_frame">
+      <!-- 日付部分 -->
+      <span id="clock_date"></span>
+      <!-- 時刻部分 -->
+      <span id="clock_time"></span>
+    </div>
+  </bod>
+</html>
