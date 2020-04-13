@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What
+Desktop用のデジタル時計
 
-Things you may want to cover:
+## Why
+テクニカルテスト受けるまで基礎学中心！
 
-* Ruby version
+個人アプリにはガッリ手を出せない。
 
-* System dependencies
+でも、何かしら実装したい。。。
 
-* Configuration
+と思いプチアプリ作成をすることにしました。
 
-* Database creation
+## 環境
+`Mac`　10.14.6
 
-* Database initialization
+`Ruby` 2.5.1p57
 
-* How to run the test suite
+`iTerm2` Build 3.3.7
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## view
+![img](https://user-images.githubusercontent.com/57339536/79128135-fa5f1080-7ddd-11ea-8116-8b9e197839cc.gif)
